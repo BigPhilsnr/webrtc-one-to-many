@@ -53,5 +53,5 @@ function handleTrackEvent(e, peer) {
     senderStream = e.streams[0];
 };
 
-
-app.listen(5000, () => console.log('server started'));
+let port = process.env.PORT || 8080
+app.listen(port, () => console.log('server started'));
